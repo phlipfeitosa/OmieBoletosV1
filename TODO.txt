@@ -1,0 +1,14 @@
+TODO
+
+Front end
+---------
+1. Botão busca com ajax;
+2. JQuery adicionar resultados na tabela armazenando os resultados (JSON) no array de strings;
+3. Lógica de paginação;
+4. JQuery click no checkbox (armazenar selecionados);
+5. Botão gerar boletos (redirecionar para servlet) enviando boletos selecionados;
+6. Modal para exibição completa do boleto ao clicar no nome;
+
+Back end
+--------
+1. Servlet para geração dos boletos;

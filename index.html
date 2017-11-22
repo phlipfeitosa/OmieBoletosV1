@@ -10,7 +10,7 @@
 <body>
 	<header>
 		<div class="container">
-			<h1>Omie Boletos</h1>
+			<h3>Omie Boletos</h3>
 		</div>
 		<div class="container">
 			<div id="accordion" role="tablist">
@@ -59,6 +59,12 @@
 									</div>
 								</div>
 								<a href="https://github.com/phlipfeitosa/OmieBoletosV1"><img src="https://image.flaticon.com/icons/svg/37/37819.svg" width="16" height="16"/></a>
+								<select class="custom-select">
+									<option selected>Resultados por página</option>
+									<option value="1">5</option>
+									<option value="2">20</option>
+									<option value="3">50</option>
+								</select>
 							</form>
 						</div>
 					</div>
@@ -77,35 +83,62 @@
 			</thead>
 			<tbody>
 				<tr>
-					<th scope="row"><input type="checkbox" name=""/></th>
-					<td><a href="#" data-toggle="modal" data-target="#boleto-modal">Philip</a></td>
-					<td>21/11/2019</td>
-					<td>R$ 590,47</td>
+					<th scope="row" style="width: 15%;">
+						<label class="custom-control custom-checkbox mb-2 mr-sm-2 mb-sm-0">
+							<input type="checkbox" class="custom-control-input">
+							<span class="custom-control-indicator"></span>
+						</label>
+					</th>
+					<td style="width: 55%;"><a href="#" data-toggle="modal" data-target="#boleto-modal">Philip</a></td>
+					<td style="width: 15%;">21/11/2019</td>
+					<td style="width: 15%;">R$ 590,47</td>
 				</tr>
+<!--
 				<tr>
-					<th scope="row"><input type="checkbox" name=""/></th>
+					<th scope="row">
+						<label class="custom-control custom-checkbox mb-2 mr-sm-2 mb-sm-0">
+							<input type="checkbox" class="custom-control-input">
+							<span class="custom-control-indicator"></span>
+						</label>
+					</th>
 					<td><a href="#">Victor</a></td>
 					<td>21/11/2019</td>
 					<td>R$ 1.687,79</td>
 				</tr>
 				<tr>
-					<th scope="row"><input type="checkbox" name=""/></th>
+					<th scope="row">
+						<label class="custom-control custom-checkbox mb-2 mr-sm-2 mb-sm-0">
+							<input type="checkbox" class="custom-control-input">
+							<span class="custom-control-indicator"></span>
+						</label>
+					</th>
 					<td><a href="#">Philip</a></td>
 					<td>21/11/2019</td>
 					<td>R$ 590,47</td>
 				</tr>
 				<tr>
-					<th scope="row"><input type="checkbox" name=""/></th>
+					<th scope="row">
+						<label class="custom-control custom-checkbox mb-2 mr-sm-2 mb-sm-0">
+							<input type="checkbox" class="custom-control-input">
+							<span class="custom-control-indicator"></span>
+						</label>
+					</th>
 					<td><a href="#">Victor</a></td>
 					<td>21/11/2019</td>
 					<td>R$ 1.687,79</td>
 				</tr>
 				<tr>
-					<th scope="row"><input type="checkbox" name=""/></th>
+					<th scope="row">
+						<label class="custom-control custom-checkbox mb-2 mr-sm-2 mb-sm-0">
+							<input type="checkbox" class="custom-control-input">
+							<span class="custom-control-indicator"></span>
+						</label>
+					</th>
 					<td><a href="#">Philip</a></td>
 					<td>21/11/2019</td>
 					<td>R$ 590,47</td>
 				</tr>
+-->
 			</tbody>
 			<tfoot>
 				<tr>

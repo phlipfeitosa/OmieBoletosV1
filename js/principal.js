@@ -3,7 +3,7 @@ var dataSend = '{{"call":"ConsultarBanco","app_key":"1560731700","app_secret":"2
 
 $('#buscar').click(function() {
 	$.ajax({
-		url:'http://app.omie.com.br/api/v1/geral/bancos/',
+		url:'BoletoWS',
 		contentType: "application/json; charset=utf-8",
 		dataType:'json',
 		crossDomain:true,

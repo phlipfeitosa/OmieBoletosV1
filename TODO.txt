@@ -2,7 +2,7 @@ TODO
 
 Front end
 ---------
-1. Botão busca com ajax;
+1. Botão busca com ajax (chamar o servlet local que chamará o web service);
 2. JQuery adicionar resultados na tabela armazenando os resultados (JSON) no array de strings;
 3. Lógica de paginação;
 4. JQuery click no checkbox (armazenar selecionados);
@@ -12,3 +12,7 @@ Front end
 Back end
 --------
 1. Servlet para geração dos boletos;
+
+
+Algoritmo de paginação:
+Depois da busca, montar {html da barra de paginação}, adicionar todos os boletos retornados na tabela de resultados gerais, ocultar todas as linhas diferentes da página 1;

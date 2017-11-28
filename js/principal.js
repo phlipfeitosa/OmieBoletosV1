@@ -1,9 +1,3 @@
-var lastPage = 0;
-
-//var results = [{"page":"1", "numero":"1234567890", "nome":"Victor", "datadocumento":"23/11/2019", "valor":"R$ 1.567,83"}];
-var results = [];
-
-var dataSend = '{{"call":"ConsultarBanco","app_key":"1560731700","app_secret":"226dcf372489bb45ceede61bfd98f0f1","param":[{"codigo":1}]}}';
 
 var boletoListarResponse = [
 {
@@ -1144,6 +1138,13 @@ var boletoListarResponse = [
 }
 ];
 
+var lastPage = 0;
+
+//var results = [{"page":"1", "numero":"1234567890", "nome":"Victor", "datadocumento":"23/11/2019", "valor":"R$ 1.567,83"}];
+var results = [];
+
+var dataSend = '{{"call":"ConsultarBanco","app_key":"1560731700","app_secret":"226dcf372489bb45ceede61bfd98f0f1","param":[{"codigo":1}]}}';
+
 // Monta os resultados na tabela
 $.each(results, function() { // Linhas
 	var numero = '';
@@ -1281,6 +1282,7 @@ function search() {
 
 	});
 
+	// Exibe as 4 primeiras páginas
 	showPaginatorNumber(1);
 	showPaginatorNumber(2);
 	showPaginatorNumber(3);
@@ -1289,7 +1291,7 @@ function search() {
 }
 
 function addPaginatorPage(page) {
-	$('#paginator').append('<li class="page-item" data-page="' + page + '"><a class="page-link" href="#">' + page + '</a></li>');
+	$('#paginator').append('<li class="page-item" data-page="' + page + '"><a class="page-link" href="#" onclick="toPage(' + page + ')">' + page + '</a></li>');
 
 }
 
@@ -1308,6 +1310,9 @@ function toPage(page) {
 		if($(this).data('page') != page)
 			$(this).hide();
 
+		else
+			$(this).show();
+
 	});
 
 	// Desabilitar página
@@ -1318,6 +1323,19 @@ function showPaginatorNumber(page) {
 	$.each($('#paginator li'), function() {
 		if($(this).data('page') == page && $(this).data('link') != true)
 			$(this).show();
+
+	});
+
+}
+
+$('#testar').click(function() {
+	gerarBoleto();
+});
+
+function gerarBoleto() {
+	var i = 0;
+	$.each($('#results-table tr td'), function() {
+		i++;
 
 	});
 
